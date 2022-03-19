@@ -7,7 +7,7 @@ class TodoList extends Component {
         this.state = {
             userInput: '',
             items: [],
-            color: '',
+            color: [],
             tasksCount: 0
         };
     }
@@ -47,6 +47,7 @@ class TodoList extends Component {
         console.log(statut)
     }
 
+    
     renderTodos() {
         return this.state.items.map((item) => {
             return (
